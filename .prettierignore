@@ -1,0 +1,9 @@
+android/
+ios/
+.husky/
+coverage/
+build/
+node_modules/
+vendor/
+.watchmanconfig
+CHANGELOG.md
