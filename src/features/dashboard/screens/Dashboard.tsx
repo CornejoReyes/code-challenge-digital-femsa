@@ -6,24 +6,43 @@ import { useMemo, useState } from 'react';
 import { ProductList, getProducts } from '../../products';
 import { Greeting, Points } from '../components';
 
+type Transaction = 'all' | 'redeemed' | 'accumulated';
+
 export default function Dashboard() {
   const [today] = useState<Date>(new Date());
+  const [transactionType, setTransactionType] = useState<Transaction>('all');
   const formattedDate = useMemo(() => format(today, 'MMMM', { locale: es }), [today]);
   const { data, isLoading } = useQuery({
     queryKey: ['products'],
     queryFn: getProducts,
   });
+  const products = useMemo(
+    () =>
+      transactionType !== 'all'
+        ? data?.filter(product => {
+            if (transactionType === 'accumulated') {
+              return !product.is_redemption;
+            }
+            return product.is_redemption;
+          })
+        : data,
+    [transactionType, data],
+  );
 
   const points = useMemo(
     () =>
-      data?.reduce((total, product) => {
+      products?.reduce((total, product) => {
         if (product.is_redemption) {
           return total - product.points;
         }
         return total + product.points;
       }, 0),
-    [data],
+    [products],
   );
+
+  const handleTransactionFilter = (type: Transaction) => () => {
+    setTransactionType(type);
+  };
 
   return (
     <Box p="4" flex="1">
@@ -39,15 +58,23 @@ export default function Dashboard() {
           TUS MOVIMIENTOS
         </Text>
         <Box bg="white" rounded="lg" flex="1" p="2" mb="4">
-          <ProductList data={data || []} />
+          <ProductList data={products || []} />
         </Box>
         <HStack space="4">
-          <Button flex="1" variant="main">
-            Ganados
-          </Button>
-          <Button flex="1" variant="main">
-            Canjeados
-          </Button>
+          {transactionType === 'all' ? (
+            <>
+              <Button flex="1" variant="main" onPress={handleTransactionFilter('accumulated')}>
+                Ganados
+              </Button>
+              <Button flex="1" variant="main" onPress={handleTransactionFilter('redeemed')}>
+                Canjeados
+              </Button>
+            </>
+          ) : (
+            <Button flex="1" variant="main" onPress={handleTransactionFilter('all')}>
+              Todos
+            </Button>
+          )}
         </HStack>
       </Box>
     </Box>
