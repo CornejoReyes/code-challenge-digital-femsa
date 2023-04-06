@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { NativeBaseProvider } from 'native-base';
 import { PropsWithChildren } from 'react';
+import theme from './theme';
 
 const queryClient = new QueryClient();
 const inset = {
@@ -13,7 +14,7 @@ export interface Props extends PropsWithChildren {}
 
 export default function Providers({ children }: Props) {
   return (
-    <NativeBaseProvider initialWindowMetrics={inset}>
+    <NativeBaseProvider initialWindowMetrics={inset} theme={theme}>
       <QueryClientProvider client={queryClient}>
         <NavigationContainer>{children}</NavigationContainer>
       </QueryClientProvider>

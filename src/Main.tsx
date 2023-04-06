@@ -1,9 +1,11 @@
-import { Center, Text } from 'native-base';
+import { StatusBar } from 'native-base';
+import { AppNavigator } from './navigation';
 
 export default function Main() {
   return (
-    <Center flex="1" bg="white">
-      <Text>Hello DigitalFemsa</Text>
-    </Center>
+    <>
+      <StatusBar barStyle="dark-content" backgroundColor="#fcfcfc" />
+      <AppNavigator />
+    </>
   );
 }
