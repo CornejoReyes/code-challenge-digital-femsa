@@ -27,13 +27,13 @@ function ProductListItem({ item }: Props) {
       <HStack space="2" alignItems="center" flex="1">
         <Image source={{ uri: item.image }} w={50} h={50} rounded="md" resizeMode={FastImage.resizeMode.cover} />
         <HStack alignItems="center" justifyContent="space-between" flex="1">
-          <VStack>
-            <Text fontWeight="bold" fontSize="sm">
+          <VStack flex="1.7">
+            <Text w="full" fontWeight="bold" fontSize="sm" numberOfLines={1}>
               {item.product}
             </Text>
             <Text fontSize="10px">{formattedDate}</Text>
           </VStack>
-          <HStack alignItems="center" space="2">
+          <HStack alignItems="center" space="2" flex="1" justifyContent="space-between">
             <Text>
               <Text fontSize="md" color={item.is_redemption ? 'red.600' : 'green.600'}>
                 {item.is_redemption ? '- ' : '+ '}
