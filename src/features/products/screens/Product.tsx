@@ -16,9 +16,9 @@ export default function Product({ route, navigation }: Props) {
   const parsedDate = parseISO(product.createdAt);
   return (
     <>
-      <StatusBar backgroundColor={theme.colors.secondary} />
-      <Box flex="1">
-        <Box bg="secondary" h="10%" justifyContent="flex-end" p="4">
+      <StatusBar backgroundColor={theme.colors.secondary} barStyle="dark-content" />
+      <Box flex="1" safeAreaBottom>
+        <Box bg="secondary" h="15%" justifyContent="flex-end" p="4">
           <Text fontWeight="bold" fontSize="lg">
             {product.product}
           </Text>

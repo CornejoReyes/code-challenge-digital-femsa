@@ -45,7 +45,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Box p="4" flex="1">
+    <Box p="4" flex="1" safeAreaTop safeAreaBottom>
       <Greeting name="Fernando Cornejo" />
       <Box my="6">
         <Text fontSize="xs" fontWeight="bold" color="gray.500" mb="4">

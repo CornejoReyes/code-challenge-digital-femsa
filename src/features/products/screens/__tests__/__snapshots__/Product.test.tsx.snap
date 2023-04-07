@@ -14,7 +14,7 @@ exports[`<Product /> renders a product correctly 1`] = `
     style={
       {
         "backgroundColor": "#CFD6FF",
-        "height": "10%",
+        "height": "15%",
         "justifyContent": "flex-end",
         "paddingBottom": 16,
         "paddingLeft": 16,
@@ -329,7 +329,7 @@ exports[`<Product /> renders a product with redemption correctly 1`] = `
     style={
       {
         "backgroundColor": "#CFD6FF",
-        "height": "10%",
+        "height": "15%",
         "justifyContent": "flex-end",
         "paddingBottom": 16,
         "paddingLeft": 16,
