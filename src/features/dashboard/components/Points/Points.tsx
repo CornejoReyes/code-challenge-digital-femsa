@@ -15,11 +15,11 @@ export default function Points({ title, points, loading }: Props) {
         {capitalize(title)}
       </Text>
       {loading ? (
-        <Center>
+        <Center accessibilityLabel="spinner container">
           <Spinner size="lg" color="white" />
         </Center>
       ) : (
-        <Text color="white" fontSize="2xl" fontWeight="bold" mx="auto">
+        <Text color="white" fontSize="2xl" fontWeight="bold" mx="auto" accessibilityLabel="points container">
           {formatNumberAsQuantity(points)} pts
         </Text>
       )}

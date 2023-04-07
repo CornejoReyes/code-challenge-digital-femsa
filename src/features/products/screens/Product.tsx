@@ -32,17 +32,17 @@ export default function Product({ route, navigation }: Props) {
           <Text fontSize="xs" fontWeight="bold" color="gray.500" mb="4">
             Detalles del producto:
           </Text>
-          <Text fontWeight="bold" mb="4">
+          <Text fontWeight="bold" mb="4" accessibilityLabel="product date">
             Comprado el {format(parsedDate, "dd 'de' MMMM ',' yyyy", { locale: es })}
           </Text>
-          <Text fontSize="xs" fontWeight="bold" color="gray.500" mb="4">
+          <Text fontSize="xs" fontWeight="bold" color="gray.500" mb="4" accessibilityLabel="product transaction label">
             Con esta compra {product.is_redemption ? 'canjeaste' : 'acumulaste'}:
           </Text>
-          <Text fontWeight="bold" mb="4">
+          <Text fontWeight="bold" mb="4" accessibilityLabel="product transaction">
             {formatNumberAsQuantity(product.points)} puntos
           </Text>
         </Box>
-        <Button variant="main" m="4" onPress={navigation.goBack}>
+        <Button variant="main" m="4" onPress={navigation.goBack} accessibilityLabel="cta">
           Aceptar
         </Button>
       </Box>

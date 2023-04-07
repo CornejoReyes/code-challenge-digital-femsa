@@ -1,0 +1,631 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Product /> renders a product correctly 1`] = `
+<View
+  dataSet={{}}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "backgroundColor": "#CFD6FF",
+        "height": "10%",
+        "justifyContent": "flex-end",
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <Text
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 27,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Product item 1
+    </Text>
+  </View>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "flex": 1,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <View
+      dataSet={{}}
+      style={
+        [
+          {
+            "marginBottom": 16,
+          },
+          {
+            "aspectRatio": 1,
+            "style": undefined,
+          },
+        ]
+      }
+    >
+      <View
+        dataSet={{}}
+        style={
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 12,
+              "elevation": 5,
+              "paddingBottom": 32,
+              "paddingLeft": 32,
+              "paddingRight": 32,
+              "paddingTop": 32,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.25,
+              "shadowRadius": 3.84,
+            },
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "height": "100%",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <FastImageView
+            dataSet={{}}
+            defaultSource={null}
+            resizeMode="cover"
+            source={
+              {
+                "uri": "image",
+              }
+            }
+            style={
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <Text
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#71717a",
+          "fontFamily": undefined,
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 18,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Detalles del producto:
+    </Text>
+    <Text
+      accessibilityLabel="product date"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 21,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Comprado el 
+      09 de diciembre , 2022
+    </Text>
+    <Text
+      accessibilityLabel="product transaction label"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#71717a",
+          "fontFamily": undefined,
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 18,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Con esta compra 
+      acumulaste
+      :
+    </Text>
+    <Text
+      accessibilityLabel="product transaction"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 21,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      100.00
+       puntos
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="cta"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    colorScheme="primary"
+    dataSet={{}}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#334FFA",
+        "borderRadius": 8,
+        "elevation": 5,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 16,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "paddingBottom": 10,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 10,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
+        "shadowRadius": 3.84,
+      }
+    }
+  >
+    <View
+      dataSet={{}}
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+      test={true}
+    >
+      <View
+        dataSet={{}}
+        style={{}}
+      >
+        <Text
+          dataSet={{}}
+          style={
+            {
+              "backgroundColor": undefined,
+              "color": "#FFFFFF",
+              "fontFamily": undefined,
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "letterSpacing": 0,
+              "lineHeight": 21,
+              "textDecorationLine": undefined,
+            }
+          }
+        >
+          Aceptar
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Product /> renders a product with redemption correctly 1`] = `
+<View
+  dataSet={{}}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "backgroundColor": "#CFD6FF",
+        "height": "10%",
+        "justifyContent": "flex-end",
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <Text
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 27,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Product item 1
+    </Text>
+  </View>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "flex": 1,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <View
+      dataSet={{}}
+      style={
+        [
+          {
+            "marginBottom": 16,
+          },
+          {
+            "aspectRatio": 1,
+            "style": undefined,
+          },
+        ]
+      }
+    >
+      <View
+        dataSet={{}}
+        style={
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 12,
+              "elevation": 5,
+              "paddingBottom": 32,
+              "paddingLeft": 32,
+              "paddingRight": 32,
+              "paddingTop": 32,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.25,
+              "shadowRadius": 3.84,
+            },
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "height": "100%",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <FastImageView
+            dataSet={{}}
+            defaultSource={null}
+            resizeMode="cover"
+            source={
+              {
+                "uri": "image",
+              }
+            }
+            style={
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <Text
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#71717a",
+          "fontFamily": undefined,
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 18,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Detalles del producto:
+    </Text>
+    <Text
+      accessibilityLabel="product date"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 21,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Comprado el 
+      09 de diciembre , 2022
+    </Text>
+    <Text
+      accessibilityLabel="product transaction label"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#71717a",
+          "fontFamily": undefined,
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 18,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      Con esta compra 
+      canjeaste
+      :
+    </Text>
+    <Text
+      accessibilityLabel="product transaction"
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#171717",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 21,
+          "marginBottom": 16,
+          "textDecorationLine": undefined,
+        }
+      }
+    >
+      100.00
+       puntos
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="cta"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    colorScheme="primary"
+    dataSet={{}}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#334FFA",
+        "borderRadius": 8,
+        "elevation": 5,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 16,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "paddingBottom": 10,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 10,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
+        "shadowRadius": 3.84,
+      }
+    }
+  >
+    <View
+      dataSet={{}}
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+      test={true}
+    >
+      <View
+        dataSet={{}}
+        style={{}}
+      >
+        <Text
+          dataSet={{}}
+          style={
+            {
+              "backgroundColor": undefined,
+              "color": "#FFFFFF",
+              "fontFamily": undefined,
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "letterSpacing": 0,
+              "lineHeight": 21,
+              "textDecorationLine": undefined,
+            }
+          }
+        >
+          Aceptar
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -63,15 +63,25 @@ export default function Dashboard() {
         <HStack space="4">
           {transactionType === 'all' ? (
             <>
-              <Button flex="1" variant="main" onPress={handleTransactionFilter('accumulated')}>
+              <Button
+                flex="1"
+                variant="main"
+                onPress={handleTransactionFilter('accumulated')}
+                accessibilityLabel="accumulated cta"
+              >
                 Ganados
               </Button>
-              <Button flex="1" variant="main" onPress={handleTransactionFilter('redeemed')}>
+              <Button
+                flex="1"
+                variant="main"
+                onPress={handleTransactionFilter('redeemed')}
+                accessibilityLabel="redeemed cta"
+              >
                 Canjeados
               </Button>
             </>
           ) : (
-            <Button flex="1" variant="main" onPress={handleTransactionFilter('all')}>
+            <Button flex="1" variant="main" onPress={handleTransactionFilter('all')} accessibilityLabel="all cta">
               Todos
             </Button>
           )}
